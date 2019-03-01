@@ -17,7 +17,6 @@
 -->
 <resources>
     <string name="app_name">Gwasanaeth Argraffu Rhagosodedig</string>
-    <!-- Job blocked status messages-->
     <string name="printer_busy">Yn brysur</string>
     <string name="printer_out_of_paper">Allan o bapur</string>
     <string name="printer_out_of_ink">Dim inc</string>
@@ -29,21 +28,15 @@
     <string name="printer_offline">All-lein</string>
     <string name="printer_check">Gwiria\'r argraffydd</string>
     <string name="waiting_to_send">Yn aros i anfon</string>
-    <!-- Job error messages -->
     <string name="wifi_not_connected">Wi-Fi heb gysylltu</string>
     <string name="unreadable_input">Methwyd â darllen y ddogfen</string>
-    <!-- Media size labels -->
     <string name="media_size_l">M</string>
     <string name="media_size_5x7in">5x7 mod</string>
     <string name="media_size_89x119mm">89x119 mm</string>
     <string name="media_size_54x86mm">54x86 mm</string>
     <string name="media_size_8x10in">8x10 mod</string>
     <string name="media_size_4x6in">4x6 mod</string>
-    <!-- Printer's default description text. %1$s is IP address and %2$s is location
-    (if known) e.g. "192.168.43.193 - 3rd Floor Copy Room". -->
-    <string name="printer_description">%1$s &#8211; %2$s</string>
-    <!-- Required by system, but does not appear in any UI -->
-    <!-- Manual printer strings -->
+    <string name="printer_description">%1$s – %2$s</string>
     <string name="title_activity_add_printer">Argraffyddion Wedi eu Hychwanegu</string>
     <string name="add_manual_printer">Ychwanegu argraffydd â llaw</string>
     <string name="hostname_or_ip">Enw gwestai neu gyfeiriad IP</string>

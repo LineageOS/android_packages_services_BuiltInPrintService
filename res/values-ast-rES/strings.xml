@@ -17,11 +17,4 @@
 -->
 <resources>
     <string name="app_name">Serviciu predetermináu d\'imprentación</string>
-    <!-- Job blocked status messages-->
-    <!-- Job error messages -->
-    <!-- Media size labels -->
-    <!-- Printer's default description text. %1$s is IP address and %2$s is location
-    (if known) e.g. "192.168.43.193 - 3rd Floor Copy Room". -->
-    <!-- Required by system, but does not appear in any UI -->
-    <!-- Manual printer strings -->
 </resources>
