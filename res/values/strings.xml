@@ -29,8 +29,6 @@
     <string name="printer_door_open">Door open</string>
     <string name="printer_jammed">Jammed</string>
     <string name="printer_offline">Offline</string>
-    <string name="printer_bad_certificate">Bad certificate</string>
-    <string name="printer_not_encrypted">Not encrypted</string>
     <string name="printer_check">Check printer</string>
     <string name="waiting_to_send">Waiting to send</string>
 
@@ -65,8 +63,6 @@
     <string name="printer_not_supported">Printer not supported</string>
     <string name="wifi_direct">Wi-Fi Direct</string>
     <string name="find_wifi_direct">Find Wi-Fi Direct printers</string>
-    <!-- Preference name for enable/disable of Wi-Fi Direct printing [CHAR LIMIT=UNLIMITED] -->
-    <string name="wifi_direct_printing">Wi-Fi Direct printing</string>
     <string name="wifi_direct_printers">Wi-Fi Direct printers</string>
     <string name="searching">Searching\u2026</string>
     <string name="connect_hint_text">You may need to approve this connection on your printer\'s
@@ -85,35 +81,4 @@
     <string name="connects_via_network">Connects via current network at
         <xliff:g example="192.168.0.101" id="ip_address">%1$s</xliff:g>
     </string>
-
-    <!-- Explain purpose of recommendation fragment [CHAR LIMIT=UNLIMITED] -->
-    <string name="recommendation_summary">The Default Print Service provides basic options. Other options for this printer may be available from another print service.</string>
-    <!-- Heading for services that are not currently installed, but recommended [CHAR LIMIT=UNLIMITED] -->
-    <string name="recommendations_heading">Recommended services</string>
-    <!-- Summary for recommended services that are not installed [CHAR LIMIT=UNLIMITED] -->
-    <string name="recommendation_install_summary">Select to install</string>
-    <!-- Summary for recommended services that are installed [CHAR LIMIT=UNLIMITED] -->
-    <string name="recommendation_enable_summary">Select to enable</string>
-    <!-- Button to allow user to enable/disable installed print services. [CHAR LIMIT=UNLIMITED] -->
-    <string name="recommendation_manage">Manage services</string>
-
-    <!-- Channel name for security-related notifications [CHAR LIMIT=40] -->
-    <string name="security">Security</string>
-    <!-- Message shown in notification if a printer presented a changes security certificate [CHAR LIMIT=UNLIMITED] -->
-    <string name="certificate_update_request">This printer provided a new security certificate, or another
-        device is impersonating it. Accept the new certificate?</string>
-    <!-- Message shown in notification if a printer no longer supports encryption [CHAR LIMIT=UNLIMITED] -->
-    <string name="not_encrypted_request">This printer no longer accepts encrypted jobs. Continue printing?</string>
-    <!-- Button label in a notification. This button accepts a printer security change [CHAR LIMIT=20] -->
-    <string name="accept">Accept</string>
-    <!-- Button label in a notification. This button rejects a printer security change [CHAR LIMIT=20] -->
-    <string name="reject">Reject</string>
-
-    <!-- Channel name for connection-related notifications [CHAR LIMIT=40] -->
-    <string name="connections">Connections</string>
-    <!-- Message shown in dialog, toast, or notification if the service cannot get Wi-Fi Direct permissions [CHAR LIMIT=UNLIMITED] -->
-    <string name="wifi_direct_permission_rationale">Default Print Service needs location permissions
-        to access Wi-Fi Direct printers because your location can be inferred from nearby devices.</string>
-    <!-- Button label in a notification or dialog. This button leads to a request to grant permissions [CHAR LIMIT=20] -->
-    <string name="fix">Fix</string>
 </resources>
