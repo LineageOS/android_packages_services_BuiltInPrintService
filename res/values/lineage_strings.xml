@@ -16,10 +16,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Job blocked status messages-->
-    <string name="printer_bad_certificate">Bad certificate</string>
-    <string name="printer_not_encrypted">Not encrypted</string>
-
     <!-- Preference name for enable/disable of Wi-Fi Direct printing [CHAR LIMIT=UNLIMITED] -->
     <string name="wifi_direct_printing">Wi-Fi Direct printing</string>
 
@@ -33,18 +29,6 @@
     <string name="recommendation_enable_summary">Select to enable</string>
     <!-- Button to allow user to enable/disable installed print services. [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_manage">Manage services</string>
-
-    <!-- Channel name for security-related notifications [CHAR LIMIT=40] -->
-    <string name="security">Security</string>
-    <!-- Message shown in notification if a printer presented a changes security certificate [CHAR LIMIT=UNLIMITED] -->
-    <string name="certificate_update_request">This printer provided a new security certificate, or another
-        device is impersonating it. Accept the new certificate?</string>
-    <!-- Message shown in notification if a printer no longer supports encryption [CHAR LIMIT=UNLIMITED] -->
-    <string name="not_encrypted_request">This printer no longer accepts encrypted jobs. Continue printing?</string>
-    <!-- Button label in a notification. This button accepts a printer security change [CHAR LIMIT=20] -->
-    <string name="accept">Accept</string>
-    <!-- Button label in a notification. This button rejects a printer security change [CHAR LIMIT=20] -->
-    <string name="reject">Reject</string>
 
     <!-- Channel name for connection-related notifications [CHAR LIMIT=40] -->
     <string name="connections">Connections</string>
