@@ -26,6 +26,8 @@
     <string name="printer_door_open">Drws ar agor</string>
     <string name="printer_jammed">Yn sownd</string>
     <string name="printer_offline">All-lein</string>
+    <string name="printer_bad_certificate">Tystysgrif ddrwg</string>
+    <string name="printer_not_encrypted">Heb ei amgryptio</string>
     <string name="printer_check">Gwiria\'r argraffydd</string>
     <string name="waiting_to_send">Yn aros i anfon</string>
     <string name="unreadable_input">Methwyd â darllen y ddogfen</string>
@@ -64,4 +66,9 @@
     <string name="connects_via_network">Mae\'n cysylltu trwy\'r rhwydwaith cyfredol ar 
         <xliff:g example="192.168.0.101" id="ip_address">%1$s</xliff:g>
     </string>
+    <string name="security">Diogelwch</string>
+    <string name="certificate_update_request">Darparodd yr argraffydd hwn dystysgrif diogelwch newydd, neu mae dyfais arall yn ei ddynwared. Derbyn y dystysgrif newydd?</string>
+    <string name="not_encrypted_request">Dyw\'r argraffydd hwn ddim bellach yn derbyn gwaith wedi\'i amgryptio. Parhau i argraffu?</string>
+    <string name="accept">Derbyn</string>
+    <string name="reject">Gwrthod</string>
 </resources>
