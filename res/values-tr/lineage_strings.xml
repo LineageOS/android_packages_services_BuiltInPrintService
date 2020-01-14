@@ -23,5 +23,7 @@
     <string name="recommendation_enable_summary">Etkinleştirmek için seçin</string>
     <string name="recommendation_manage">Servisleri yönet</string>
     <string name="connections">Bağlantılar</string>
+    <string name="wifi_direct_permission_rationale">Varsayılan Yazdırma Hizmeti, konumunuzun yakındaki
+        cihazlardan çıkabileceği için Wi-Fi Doğrudan yazıcılara erişmek için konum izinlerine ihtiyaç duyuyor.</string>
     <string name="fix">Düzelt</string>
 </resources>

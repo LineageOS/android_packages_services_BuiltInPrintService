@@ -16,8 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="wifi_direct_printing">Печать через Wi-Fi Direct</string>
-    <string name="recommendation_install_summary">Выбрать для установки</string>
-    <string name="recommendation_enable_summary">Выбрать для включения</string>
-    <string name="fix">Исправить</string>
+    <string name="wifi_direct_printing">Drukowanie Wi-Fi Direct</string>
+    <string name="recommendations_heading">Polecane usługi</string>
+    <string name="recommendation_install_summary">Wybierz, by zainstalować</string>
+    <string name="recommendation_enable_summary">Wybierz, by włączyć</string>
+    <string name="recommendation_manage">Zarządzaj usługami</string>
+    <string name="connections">Połączenia</string>
+    <string name="fix">Napraw</string>
 </resources>
