@@ -15,5 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="fix">შეკეთება</string>
+    <string name="recommendations_heading">Aholkatutako zerbitzuak</string>
+    <string name="recommendation_install_summary">Hautatu instalatzeko</string>
+    <string name="recommendation_enable_summary">Hautatu gaitzeko</string>
+    <string name="recommendation_manage">Kudeatu zerbitzuak</string>
+    <string name="connections">Konexioak</string>
 </resources>
