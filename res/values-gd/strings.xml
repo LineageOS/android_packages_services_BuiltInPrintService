@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="printer_bad_certificate">Droch-theisteanas</string>
+    <string name="printer_not_encrypted">Gun chrioptachadh</string>
+    <string name="title_activity_add_printer">Cuir clò-bhualadair ris</string>
+    <string name="add_printer_by_ip">Cuir clò-bhualadair ris le seòladh IP</string>
+    <string name="add_named">Cuir ris
+        <xliff:g example="Epson XP-610" id="printer">%1$s</xliff:g>
+    </string>
+    <string name="wifi_direct">WiFi dìreach</string>
+    <string name="find_wifi_direct">Lorg clò-bhualadairean WiFi dìrich</string>
+    <string name="wifi_direct_printers">Clò-bhualadairean WiFi dìrich</string>
+    <string name="searching">’Ga lorg\u2026</string>
+    <string name="connect_hint_text">Dh’fhaoidte gum bi agad ris a’ cheangal seo a dhearbhadh air
+        panail beulaibh a’ chlò-bhualadair
+    </string>
+    <string name="connecting_to">A’ ceangal ri
+        <xliff:g example="Epson XP-610" id="printer">%1$s</xliff:g>
+    </string>
+    <string name="failed_printer_connection">Cha b’ urrainn dhuinn ceangal ris a’ chlò-bhualadair</string>
+    <string name="failed_connection">Cha b’ urrainn dhuinn ceangal ri
+        <xliff:g example="Epson XP-610" id="printer">%1$s</xliff:g>
+    </string>
+    <string name="saved_printers">Clò-bhualadairean air an sàbhaladh</string>
+    <string name="forget">Dìochuimhnich</string>
+    <string name="connects_via_wifi_direct">Thèid a cheangal le WiFi dìreach</string>
+    <string name="connects_via_network">Thèid a cheangal air
+        <xliff:g example="192.168.0.101" id="ip_address">%1$s</xliff:g>
+leis an lìonra làithreach    </string>
+    <string name="security">Tèarainteachd</string>
+    <string name="certificate_update_request">Thug an clò-bhualadair seachad teisteanas tèarainteachd ùr no tha
+        uidheam eile a’ dol ’na riochd. A bheil thu airson gabhail ris an teisteanas ùr?</string>
+    <string name="not_encrypted_request">Cha ghabh an clò-bhualadair seo ri obraichean crioptaichte tuilleadh. A bheil thu airson leantainn air adhart leis a’ chlò-bhualadh?</string>
+    <string name="accept">Gabh ris</string>
+    <string name="reject">Diùlt</string>
+</resources>
