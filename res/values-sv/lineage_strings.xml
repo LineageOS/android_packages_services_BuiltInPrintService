@@ -15,10 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="recommendations_heading">Layanan yang disarankan</string>
-    <string name="recommendation_install_summary">Pilih untuk memasang</string>
-    <string name="recommendation_enable_summary">Pilih untuk mengaktifkan</string>
-    <string name="recommendation_manage">Kelola layanan</string>
-    <string name="connections">Koneksi</string>
-    <string name="fix">Perbaiki</string>
+    <string name="wifi_direct_printing">Wi-Fi Direkt utskrift</string>
+    <string name="recommendations_heading">Rekommenderade tjänster</string>
 </resources>
