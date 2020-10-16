@@ -15,6 +15,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_direct_printing">Clò-bhualadh air WiFi Direct</string>
+    <string name="recommendation_summary">Bheir seirbheis thùsail a’ chlò-bhualaidh roghainnean bunasach dhut. Dh’fhaoidte gum bi roghainnean eile ri fhaighinn dhan chlò-bhualadair seo o sheirbheis clò-bhualaidh eile.</string>
+    <string name="recommendations_heading">Seirbheisean a mholamaid</string>
+    <string name="recommendation_install_summary">Tagh gus a stàladh</string>
+    <string name="recommendation_enable_summary">Tagh seo gus a chur an comas</string>
+    <string name="recommendation_manage">Stiùirich na seirbheisean</string>
     <string name="connections">Ceanglaichean</string>
+    <string name="wifi_direct_permission_rationale">Feumaidh seirbheis thùsail a’ chlò-bhualaidh cead ionaid
+        airson clò-bhualadairean WiFi Direct inntrigeadh on a ghabhas d’ ionad a thomhas  o uidheaman am fagas.</string>
     <string name="fix">Càraich</string>
 </resources>
