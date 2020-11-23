@@ -1198,19 +1198,22 @@ http_t *ipp_cups_connect(const wprint_connect_info_t *connect_info, char *printe
     int ippPortNumber = ((connect_info->port_num == IPP_PORT) ? ippPort() : connect_info->port_num);
 
     if (strstr(connect_info->uri_scheme,IPPS_PREFIX) != NULL) {
-        curl_http = httpConnectEncrypt(connect_info->printer_addr, ippPortNumber, HTTP_ENCRYPTION_ALWAYS);
+        curl_http = httpConnect2(connect_info->printer_addr, ippPortNumber, NULL, AF_UNSPEC,
+                HTTP_ENCRYPTION_ALWAYS, 1, HTTP_TIMEOUT_MILLIS, NULL);
 
         // If ALWAYS doesn't work, fall back to REQUIRED
         if (curl_http == NULL) {
-            curl_http = httpConnectEncrypt(connect_info->printer_addr, ippPortNumber, HTTP_ENCRYPT_REQUIRED);
+            curl_http = httpConnect2(connect_info->printer_addr, ippPortNumber, NULL, AF_UNSPEC,
+                    HTTP_ENCRYPTION_REQUIRED, 1, HTTP_TIMEOUT_MILLIS, NULL);
         }
     } else {
-        curl_http = httpConnectEncrypt(connect_info->printer_addr, ippPortNumber, HTTP_ENCRYPTION_IF_REQUESTED);
+        curl_http = httpConnect2(connect_info->printer_addr, ippPortNumber, NULL, AF_UNSPEC,
+                HTTP_ENCRYPTION_IF_REQUESTED, 1, HTTP_TIMEOUT_MILLIS, NULL);
     }
 
     httpSetTimeout(curl_http, (double)connect_info->timeout / 1000, NULL, 0);
     httpAssembleURIf(HTTP_URI_CODING_ALL, printer_uri, uriLength, connect_info->uri_scheme, NULL,
-            connect_info->printer_addr, ippPortNumber, uri_path);
+            connect_info->printer_addr, ippPortNumber, "%s", uri_path);
 
     if (curl_http == NULL) {
         LOGD("ipp_cups_connect failed addr=%s port=%d", connect_info->printer_addr, ippPortNumber);
@@ -1242,7 +1245,6 @@ static ipp_t *ippSendRequest(http_t *http, ipp_t *request, char *resource) {
             LOGD("ippSendRequest: (Continue with NULL response) Retry");
             retry = true;
         } else if (result == HTTP_ERROR || result >= HTTP_BAD_REQUEST) {
-            _cupsSetHTTPError(result);
             break;
         }
 
