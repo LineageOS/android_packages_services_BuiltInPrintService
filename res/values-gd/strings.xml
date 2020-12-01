@@ -42,6 +42,7 @@
     <string name="connects_via_network">Thèid a cheangal air
         <xliff:g example="192.168.0.101" id="ip_address">%1$s</xliff:g>
 leis an lìonra làithreach    </string>
+    <string name="recommendation_manage">Stiùir na seirbheisean</string>
     <string name="security">Tèarainteachd</string>
     <string name="certificate_update_request">Thug an clò-bhualadair seachad teisteanas tèarainteachd ùr no tha
         uidheam eile a’ dol ’na riochd. A bheil thu airson gabhail ris an teisteanas ùr?</string>
