@@ -20,7 +20,7 @@
     <string name="recommendations_heading">Seirbheisean a mholamaid</string>
     <string name="recommendation_install_summary">Tagh gus a stàladh</string>
     <string name="recommendation_enable_summary">Tagh seo gus a chur an comas</string>
-    <string name="recommendation_manage">Stiùirich na seirbheisean</string>
+    <string name="recommendation_manage">Stiùir na seirbheisean</string>
     <string name="connections">Ceanglaichean</string>
     <string name="wifi_direct_permission_rationale">Feumaidh seirbheis thùsail a’ chlò-bhualaidh cead ionaid
         airson clò-bhualadairean WiFi Direct inntrigeadh on a ghabhas d’ ionad a thomhas  o uidheaman am fagas.</string>
