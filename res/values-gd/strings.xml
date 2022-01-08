@@ -16,6 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Seirbheis clò-bhualaidh bhunaiteach</string>
+    <!-- Job blocked status messages-->
     <string name="printer_busy">Trang</string>
     <string name="printer_out_of_paper">Chan eil pàipear air fhàgail</string>
     <string name="printer_out_of_ink">Dìth ince</string>
@@ -29,14 +30,20 @@
     <string name="printer_not_encrypted">Gun chrioptachadh</string>
     <string name="printer_check">Thoir sùil air a’ chlò-bhualadair</string>
     <string name="waiting_to_send">A\' feitheamh air a’ chur</string>
+    <!-- Job error messages -->
     <string name="unreadable_input">Cha b’ urrainn dhuinn an sgrìobhainn a leughadh</string>
+    <!-- Media size labels -->
     <string name="media_size_l">L</string>
     <string name="media_size_5x7in">5x7 in</string>
     <string name="media_size_89x119mm">89x119 mm</string>
     <string name="media_size_54x86mm">54x86 mm</string>
     <string name="media_size_8x10in">8x10 in</string>
     <string name="media_size_4x6in">4x6 in</string>
-    <string name="printer_description">%1$s – %2$s</string>
+    <!-- Printer's default description text. %1$s is IP address and %2$s is location
+    (if known) e.g. "192.168.43.193 - 3rd Floor Copy Room". -->
+    <string name="printer_description">%1$s &#8211; %2$s</string>
+    <!-- Required by system, but does not appear in any UI -->
+    <!-- Manual printer strings -->
     <string name="title_activity_add_printer">Cuir clò-bhualadair ris</string>
     <string name="add_printer_by_ip">Cuir clò-bhualadair ris le seòladh IP</string>
     <string name="hostname_or_ip">Ainm an òstair no seòladh IP</string>
@@ -49,6 +56,7 @@
     <string name="printer_not_supported">Cha chuirear taic ris a’ chlò-bhualadair</string>
     <string name="wifi_direct">WiFi dìreach</string>
     <string name="find_wifi_direct">Lorg clò-bhualadairean WiFi dìrich</string>
+    <!-- Preference name for enable/disable of Wi-Fi Direct printing [CHAR LIMIT=UNLIMITED] -->
     <string name="wifi_direct_printing">Clò-bhualadh air WiFi Direct</string>
     <string name="wifi_direct_printers">Clò-bhualadairean WiFi dìrich</string>
     <string name="searching">’Ga lorg\u2026</string>
@@ -68,19 +76,33 @@
     <string name="connects_via_network">Thèid a cheangal air
         <xliff:g example="192.168.0.101" id="ip_address">%1$s</xliff:g>
 leis an lìonra làithreach    </string>
+    <!-- Explain purpose of recommendation fragment [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_summary">Bheir seirbheis bhunaiteach a’ chlò-bhualaidh roghainnean bunasach dhut. Dh’fhaoidte gum bi roghainnean eile ri fhaighinn dhan chlò-bhualadair seo o sheirbheis clò-bhualaidh eile.</string>
+    <!-- Heading for services that are not currently installed, but recommended [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendations_heading">Seirbheisean a mholamaid</string>
+    <!-- Summary for recommended services that are not installed [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_install_summary">Tagh gus a stàladh</string>
+    <!-- Summary for recommended services that are installed [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_enable_summary">Tagh seo gus a chur an comas</string>
+    <!-- Button to allow user to enable/disable installed print services. [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_manage">Stiùir na seirbheisean</string>
+    <!-- Channel name for security-related notifications [CHAR LIMIT=40] -->
     <string name="security">Tèarainteachd</string>
+    <!-- Message shown in notification if a printer presented a changes security certificate [CHAR LIMIT=UNLIMITED] -->
     <string name="certificate_update_request">Thug an clò-bhualadair seachad teisteanas tèarainteachd ùr no tha
         uidheam eile a’ dol ’na riochd. A bheil thu airson gabhail ris an teisteanas ùr?</string>
+    <!-- Message shown in notification if a printer no longer supports encryption [CHAR LIMIT=UNLIMITED] -->
     <string name="not_encrypted_request">Cha ghabh an clò-bhualadair seo ri obraichean crioptaichte tuilleadh. A bheil thu airson leantainn air adhart leis a’ chlò-bhualadh?</string>
+    <!-- Button label in a notification. This button accepts a printer security change [CHAR LIMIT=20] -->
     <string name="accept">Gabh ris</string>
+    <!-- Button label in a notification. This button rejects a printer security change [CHAR LIMIT=20] -->
     <string name="reject">Diùlt</string>
+    <!-- Channel name for connection-related notifications [CHAR LIMIT=40] -->
     <string name="connections">Ceanglaichean</string>
+    <!-- Message shown in dialog, toast, or notification if the service cannot get Wi-Fi Direct permissions [CHAR LIMIT=UNLIMITED] -->
     <string name="wifi_direct_permission_rationale">Feumaidh seirbheis bhunaiteach a’ chlò-bhualaidh cead ionaid airson uidheaman am fagas a lorg.</string>
+    <!-- Button label in a notification or dialog. This button leads to a request to grant permissions [CHAR LIMIT=20] -->
     <string name="fix">Toir sùil air a’ chead</string>
+    <!-- Share-to-print label [CHAR LIMIT=20] -->
     <string name="print">Clò-bhuail</string>
 </resources>

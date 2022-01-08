@@ -16,6 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Gwasanaeth Argraffu Rhagosodedig</string>
+    <!-- Job blocked status messages-->
     <string name="printer_busy">Yn brysur</string>
     <string name="printer_out_of_paper">Allan o bapur</string>
     <string name="printer_out_of_ink">Dim inc</string>
@@ -29,14 +30,20 @@
     <string name="printer_not_encrypted">Heb ei amgryptio</string>
     <string name="printer_check">Gwiria\'r argraffydd</string>
     <string name="waiting_to_send">Yn aros i anfon</string>
+    <!-- Job error messages -->
     <string name="unreadable_input">Methwyd â darllen y ddogfen</string>
+    <!-- Media size labels -->
     <string name="media_size_l">M</string>
     <string name="media_size_5x7in">5x7 mod</string>
     <string name="media_size_89x119mm">89x119 mm</string>
     <string name="media_size_54x86mm">54x86 mm</string>
     <string name="media_size_8x10in">8x10 mod</string>
     <string name="media_size_4x6in">4x6 mod</string>
-    <string name="printer_description">%1$s – %2$s</string>
+    <!-- Printer's default description text. %1$s is IP address and %2$s is location
+    (if known) e.g. "192.168.43.193 - 3rd Floor Copy Room". -->
+    <string name="printer_description">%1$s &#8211; %2$s</string>
+    <!-- Required by system, but does not appear in any UI -->
+    <!-- Manual printer strings -->
     <string name="title_activity_add_printer">Ychwanegu argraffydd</string>
     <string name="add_printer_by_ip">Ychwanegu argraffydd gyda\'i gyfeiriad IP</string>
     <string name="hostname_or_ip">Enw gwestai neu gyfeiriad IP</string>
@@ -49,6 +56,7 @@
     <string name="printer_not_supported">Ni chefnogir yr argraffydd</string>
     <string name="wifi_direct">Wi-Fi Direct</string>
     <string name="find_wifi_direct">Canfod argraffwyr Wi-Fi Direct</string>
+    <!-- Preference name for enable/disable of Wi-Fi Direct printing [CHAR LIMIT=UNLIMITED] -->
     <string name="wifi_direct_printing">Argraffu Wi-Fi Uniongyrchol</string>
     <string name="wifi_direct_printers">Argraffwyr Wi-Fi Direct</string>
     <string name="searching">Yn chwilio\u2026</string>
@@ -66,17 +74,32 @@
     <string name="connects_via_network">Mae\'n cysylltu trwy\'r rhwydwaith cyfredol ar 
         <xliff:g example="192.168.0.101" id="ip_address">%1$s</xliff:g>
     </string>
+    <!-- Explain purpose of recommendation fragment [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_summary">Mae\'r Gwasanaeth Argraffu Rhagosodedig yn cynnig dewisiadau sylfaenol. Gall fod rhagor o ddewisiadau ar gyfer yr argraffydd hwn ar gael gan wasanaeth argraffu arall.</string>
+    <!-- Heading for services that are not currently installed, but recommended [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendations_heading">Gwasanaethau argymelledig</string>
+    <!-- Summary for recommended services that are not installed [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_install_summary">Dewisa i osod</string>
+    <!-- Summary for recommended services that are installed [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_enable_summary">Dewisa i alluogi</string>
+    <!-- Button to allow user to enable/disable installed print services. [CHAR LIMIT=UNLIMITED] -->
     <string name="recommendation_manage">Rheoli gwasanaethau</string>
+    <!-- Channel name for security-related notifications [CHAR LIMIT=40] -->
     <string name="security">Diogelwch</string>
+    <!-- Message shown in notification if a printer presented a changes security certificate [CHAR LIMIT=UNLIMITED] -->
     <string name="certificate_update_request">Darparodd yr argraffydd hwn dystysgrif diogelwch newydd, neu mae dyfais arall yn ei ddynwared. Derbyn y dystysgrif newydd?</string>
+    <!-- Message shown in notification if a printer no longer supports encryption [CHAR LIMIT=UNLIMITED] -->
     <string name="not_encrypted_request">Dyw\'r argraffydd hwn ddim bellach yn derbyn gwaith wedi\'i amgryptio. Parhau i argraffu?</string>
+    <!-- Button label in a notification. This button accepts a printer security change [CHAR LIMIT=20] -->
     <string name="accept">Derbyn</string>
+    <!-- Button label in a notification. This button rejects a printer security change [CHAR LIMIT=20] -->
     <string name="reject">Gwrthod</string>
+    <!-- Channel name for connection-related notifications [CHAR LIMIT=40] -->
     <string name="connections">Cysylltiadau</string>
+    <!-- Message shown in dialog, toast, or notification if the service cannot get Wi-Fi Direct permissions [CHAR LIMIT=UNLIMITED] -->
     <string name="wifi_direct_permission_rationale">Mae ar y Gwasanaeth Argraffu Rhagosodedig angen caniatâd lleoliad i ganfod dyfeisiau gerllaw.</string>
+    <!-- Button label in a notification or dialog. This button leads to a request to grant permissions [CHAR LIMIT=20] -->
     <string name="fix">Adolygu caniatâd</string>
+    <!-- Share-to-print label [CHAR LIMIT=20] -->
+    <string name="print">Argraffu</string>
 </resources>
