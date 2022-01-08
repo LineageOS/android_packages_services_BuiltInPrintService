@@ -15,15 +15,41 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Seirbheis clò-bhualaidh bhunaiteach</string>
+    <string name="printer_busy">Trang</string>
+    <string name="printer_out_of_paper">Chan eil pàipear air fhàgail</string>
+    <string name="printer_out_of_ink">Dìth ince</string>
+    <string name="printer_out_of_toner">Chan eil tònair air fhàgail</string>
+    <string name="printer_low_on_ink">Tha an inc a’ fàs gann</string>
+    <string name="printer_low_on_toner">Tònair gann</string>
+    <string name="printer_door_open">Tha an doras fosgailte</string>
+    <string name="printer_jammed">Steigte</string>
+    <string name="printer_offline">Far loidhne</string>
     <string name="printer_bad_certificate">Droch-theisteanas</string>
     <string name="printer_not_encrypted">Gun chrioptachadh</string>
+    <string name="printer_check">Thoir sùil air a’ chlò-bhualadair</string>
+    <string name="waiting_to_send">A\' feitheamh air a’ chur</string>
+    <string name="unreadable_input">Cha b’ urrainn dhuinn an sgrìobhainn a leughadh</string>
+    <string name="media_size_l">L</string>
+    <string name="media_size_5x7in">5x7 in</string>
+    <string name="media_size_89x119mm">89x119 mm</string>
+    <string name="media_size_54x86mm">54x86 mm</string>
+    <string name="media_size_8x10in">8x10 in</string>
+    <string name="media_size_4x6in">4x6 in</string>
+    <string name="printer_description">%1$s – %2$s</string>
     <string name="title_activity_add_printer">Cuir clò-bhualadair ris</string>
     <string name="add_printer_by_ip">Cuir clò-bhualadair ris le seòladh IP</string>
+    <string name="hostname_or_ip">Ainm an òstair no seòladh IP</string>
+    <string name="ip_hint">192.168.0.4</string>
+    <string name="add">Cuir ris</string>
     <string name="add_named">Cuir ris
         <xliff:g example="Epson XP-610" id="printer">%1$s</xliff:g>
     </string>
+    <string name="no_printer_found">Cha deach clò-bhualadair a lorg</string>
+    <string name="printer_not_supported">Cha chuirear taic ris a’ chlò-bhualadair</string>
     <string name="wifi_direct">WiFi dìreach</string>
     <string name="find_wifi_direct">Lorg clò-bhualadairean WiFi dìrich</string>
+    <string name="wifi_direct_printing">Clò-bhualadh air WiFi Direct</string>
     <string name="wifi_direct_printers">Clò-bhualadairean WiFi dìrich</string>
     <string name="searching">’Ga lorg\u2026</string>
     <string name="connect_hint_text">Dh’fhaoidte gum bi agad ris a’ cheangal seo a dhearbhadh air
@@ -42,6 +68,10 @@
     <string name="connects_via_network">Thèid a cheangal air
         <xliff:g example="192.168.0.101" id="ip_address">%1$s</xliff:g>
 leis an lìonra làithreach    </string>
+    <string name="recommendation_summary">Bheir seirbheis bhunaiteach a’ chlò-bhualaidh roghainnean bunasach dhut. Dh’fhaoidte gum bi roghainnean eile ri fhaighinn dhan chlò-bhualadair seo o sheirbheis clò-bhualaidh eile.</string>
+    <string name="recommendations_heading">Seirbheisean a mholamaid</string>
+    <string name="recommendation_install_summary">Tagh gus a stàladh</string>
+    <string name="recommendation_enable_summary">Tagh seo gus a chur an comas</string>
     <string name="recommendation_manage">Stiùir na seirbheisean</string>
     <string name="security">Tèarainteachd</string>
     <string name="certificate_update_request">Thug an clò-bhualadair seachad teisteanas tèarainteachd ùr no tha
@@ -49,4 +79,7 @@ leis an lìonra làithreach    </string>
     <string name="not_encrypted_request">Cha ghabh an clò-bhualadair seo ri obraichean crioptaichte tuilleadh. A bheil thu airson leantainn air adhart leis a’ chlò-bhualadh?</string>
     <string name="accept">Gabh ris</string>
     <string name="reject">Diùlt</string>
+    <string name="connections">Ceanglaichean</string>
+    <string name="wifi_direct_permission_rationale">Feumaidh seirbheis bhunaiteach a’ chlò-bhualaidh cead ionaid airson uidheaman am fagas a lorg.</string>
+    <string name="fix">Toir sùil air a’ chead</string>
 </resources>
