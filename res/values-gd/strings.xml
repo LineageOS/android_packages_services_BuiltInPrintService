@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">Seirbheis clò-bhualaidh bhunaiteach</string>
+    <string name="printer_busy">Trang</string>
+    <string name="printer_out_of_paper">Chan eil pàipear air fhàgail</string>
+    <string name="printer_out_of_ink">Dìth ince</string>
+    <string name="printer_out_of_toner">Chan eil tònair air fhàgail</string>
+    <string name="printer_low_on_ink">Tha an inc a’ fàs gann</string>
+    <string name="printer_low_on_toner">Tònair gann</string>
+    <string name="printer_door_open">Tha an doras fosgailte</string>
+    <string name="printer_jammed">Steigte</string>
+    <string name="printer_offline">Far loidhne</string>
+    <string name="printer_check">Thoir sùil air a’ chlò-bhualadair</string>
+    <string name="waiting_to_send">A\' feitheamh air a’ chur</string>
+    <string name="wifi_not_connected">Cha deach WiFi a cheangal</string>
+    <string name="unreadable_input">Cha b’ urrainn dhuinn an sgrìobhainn a leughadh</string>
+    <string name="media_size_l">L</string>
+    <string name="media_size_5x7in">5x7 in</string>
+    <string name="media_size_89x119mm">89x119 mm</string>
+    <string name="media_size_54x86mm">54x86 mm</string>
+    <string name="media_size_8x10in">8x10 in</string>
+    <string name="media_size_4x6in">4x6 in</string>
+    <string name="printer_description">%1$s – %2$s</string>
+    <string name="title_activity_add_printer">Clò-bhualadairean a chuireadh ris a làimh</string>
+    <string name="add_manual_printer">Cuir clò-bhualadair ris a làimh</string>
+    <string name="hostname_or_ip">Ainm an òstair no seòladh IP</string>
+    <string name="ip_hint">192.168.0.4</string>
+    <string name="add">Cuir ris</string>
+    <string name="no_printer_found">Cha deach clò-bhualadair a lorg</string>
+    <string name="printer_not_supported">Cha chuirear taic ris a’ chlò-bhualadair</string>
+    <string name="forget_printer">Dìochuimhnich an clò-bhualadair</string>
+</resources>
