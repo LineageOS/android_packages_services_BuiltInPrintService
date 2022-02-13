@@ -22,6 +22,6 @@
     <string name="recommendation_enable_summary">Auswählen um zu aktivieren</string>
     <string name="recommendation_manage">Dienste verwalten</string>
     <string name="connections">Verbindungen</string>
-    <string name="wifi_direct_permission_rationale">Der Standard-Druckdienst benötigt Standortberechtigungen, um auf Wi-Fi-Direct-Drucker zuzugreifen, da Ihr Standort aus nahegelegenen Geräten abgeleitet werden kann.</string>
+    <string name="wifi_direct_permission_rationale">Der Standard-Druckdienst benötigt Standortberechtigungen, um auf Wi-Fi-Direct-Drucker zuzugreifen, da dein Standort aus nahegelegenen Geräten abgeleitet werden kann.</string>
     <string name="fix">Beheben</string>
 </resources>

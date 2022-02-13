@@ -16,4 +16,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="wifi_direct_printing">Wifi Direct afdrukken</string>
+    <string name="recommendation_summary">De Standaard Print Service heeft basisopties. Meer opties zijn wellicht beschikbaar via een andere printservice.</string>
+    <string name="recommendations_heading">Aanbevolen diensten</string>
+    <string name="recommendation_install_summary">Selecteer om te installeren</string>
+    <string name="recommendation_enable_summary">Selecteer om in te schakelen</string>
+    <string name="recommendation_manage">Beheer diensten</string>
+    <string name="connections">Verbindingen</string>
+    <string name="wifi_direct_permission_rationale">Standaard Print Service heeft locatiemachtigingen nodig
+        om toegang te krijgen tot wifi-Direct printers, omdat je locatie kan worden afgeleid van apparaten in de buurt.</string>
+    <string name="fix">Repareren</string>
 </resources>

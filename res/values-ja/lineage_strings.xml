@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_direct_printing">Wi-Fi Direct 印刷</string>
+    <string name="recommendation_summary">既定の印刷サービスは基本的なオプションを提供します。プリンターの他のオプションは他の印刷サービスで有効化される可能性があります。</string>
+    <string name="recommendations_heading">推奨するサービス</string>
+    <string name="recommendation_install_summary">インストールするものを選択する</string>
+    <string name="recommendation_enable_summary">有効化するものを選択する</string>
+    <string name="recommendation_manage">サービスの管理</string>
+    <string name="connections">接続</string>
+    <string name="wifi_direct_permission_rationale">周辺の端末からあなたの位置情報を推測するため、Wi-Fi Direct プリンターへのアクセスをするには既定の印刷サービスに位置情報の権限を許可する必要があります。</string>
+    <string name="fix">修正</string>
+</resources>
