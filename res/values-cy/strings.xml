@@ -79,4 +79,5 @@
     <string name="connections">Cysylltiadau</string>
     <string name="wifi_direct_permission_rationale">Mae ar y Gwasanaeth Argraffu Rhagosodedig angen caniatâd lleoliad i ganfod dyfeisiau gerllaw.</string>
     <string name="fix">Adolygu caniatâd</string>
+    <string name="print">Argraffu</string>
 </resources>
