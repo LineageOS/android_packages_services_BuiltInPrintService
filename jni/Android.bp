@@ -75,3 +75,38 @@ cc_library_shared {
         "libz",
     ],
 }
+
+cc_test {
+    name: "libwfds_ipphelper_test",
+    gtest: true,
+    cflags: [
+        "-DINCLUDE_PDF=1",
+        "-Wno-unused-parameter",
+        "-Wno-sign-compare",
+        "-Wno-missing-field-initializers",
+        "-Wno-format",
+        "-Wno-missing-braces",
+        "-Wno-deprecated-declarations",
+    ],
+    srcs: [
+        "ipphelper/ipphelper_test.cpp",
+        // Compile the source file directly into the test to access all JNI symbols
+        "ipphelper/ipphelper.c",
+        "ipphelper/ipp_print.c",
+        "ipphelper/ippstatus_capabilities.c",
+    ],
+    local_include_dirs: [
+        "include",
+        "ipphelper",
+        "plugins/genPCLm/inc",
+    ],
+    static_libs: [
+        "libjpeg_static_ndk",
+    ],
+    shared_libs: [
+        "libcups",
+        "liblog",
+        "libcutils",
+        "libz",
+    ],
+}
