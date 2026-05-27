@@ -641,7 +641,7 @@ void parse_getMediaSupported(ipp_t *response, media_supported_t *media_supported
 
     if ((attrptr = ippFindAttribute(response, "media-supported", IPP_TAG_KEYWORD)) != NULL) {
         LOGD("media-supported  found; number of values %d", ippGetCount(attrptr));
-        for (i = 0; i < ippGetCount(attrptr); i++) {
+        for (i = 0; i < ippGetCount(attrptr) && sizes_idx < PAGE_STATUS_MAX; i++) {
             idx = ipp_find_media_size(ippGetString(attrptr, i, NULL), &media_sizeTemp);
 
             // Modified since anytime the find media size returned 0 it could either mean
