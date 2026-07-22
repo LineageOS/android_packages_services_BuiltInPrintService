@@ -16,6 +16,8 @@
  * limitations under the License.
  */
 
+#include <math.h>
+#include <stdint.h>
 #include <time.h>
 #include "wprint_mupdf.h"
 #include "lib_wprint.h"
@@ -48,6 +50,26 @@ static status_t _mupdf_get_hdr(wprint_image_info_t *image_info) {
     status_t result;
     int pages;
 
+    if (image_info == NULL) {
+        LOGE("Invalid image_info");
+        return ERROR;
+    }
+
+    if (image_info->decoder_data.urlPath == NULL) {
+        LOGE("Invalid urlPath in image_info");
+        return ERROR;
+    }
+
+    if (image_info->pdf_render_resolution <= 0) {
+        LOGE("Invalid resolution");
+        return ERROR;
+    }
+
+    if (pdf_render == NULL) {
+        LOGE("Invalid pdf_render");
+        return ERROR;
+    }
+
     pages = pdf_render->openDocument(pdf_render, image_info->decoder_data.urlPath);
     if (pages < 1) return ERROR;
 
@@ -58,13 +80,40 @@ static status_t _mupdf_get_hdr(wprint_image_info_t *image_info) {
     const float POINTS_PER_INCH = MUPDF_DEFAULT_RESOLUTION;
     zoom = (image_info->pdf_render_resolution) / POINTS_PER_INCH;
 
-    imageWidth = (unsigned int) (pageWidth * zoom);
-    imageHeight = (unsigned int) (pageHeight * zoom);
+    double scaledWidth = pageWidth * zoom;
+    double scaledHeight = pageHeight * zoom;
+
+    // Width is used later in malloc with RGB_NUMBER_PIXELS_NUM_COMPONENTS, so
+    // just make sure both dimensions are smaller than this.
+    const double MAX_DIMENSION = (double) (INT32_MAX / RGB_NUMBER_PIXELS_NUM_COMPONENTS);
+
+    if (!isfinite(scaledWidth) || !isfinite(scaledHeight) ||
+        scaledWidth <= 0.0 || scaledHeight <= 0.0 ||
+        scaledWidth > MAX_DIMENSION || scaledHeight > MAX_DIMENSION) {
+        LOGE("Invalid scaled image dimensions: w=%.2f h=%.2f", scaledWidth, scaledHeight);
+        return ERROR;
+    }
+
+    double maxBytes = scaledWidth * scaledHeight * (double) RGB_NUMBER_PIXELS_NUM_COMPONENTS;
+    if (maxBytes > (double) INT32_MAX) {
+        LOGE("Scaled image dimensions overflow max limit: w=%.2f h=%.2f (%.0f bytes)",
+             scaledWidth, scaledHeight, maxBytes);
+        return ERROR;
+    }
+
+    imageWidth = (unsigned int) scaledWidth;
+    imageHeight = (unsigned int) scaledHeight;
+
+    if (imageWidth == 0 || imageHeight == 0) {
+        LOGE("Invalid image dimensions: w=%u, h=%u",
+             imageWidth, imageHeight);
+        return ERROR;
+    }
 
     image_info->width = imageWidth;
     image_info->height = imageHeight;
 
-    size = imageWidth * imageHeight * 3;
+    size = (int) (imageWidth * imageHeight * RGB_NUMBER_PIXELS_NUM_COMPONENTS);
 
     rawBuffer = (char *) malloc((size_t) size);
     if (!rawBuffer) return ERROR;
@@ -88,6 +137,11 @@ static status_t _mupdf_get_hdr(wprint_image_info_t *image_info) {
     image_info->decoder_data.pdf_info.fz_pixmap_ptr = rawBuffer;
     image_info->decoder_data.pdf_info.bitmap_ptr = malloc(
             image_info->width * RGB_NUMBER_PIXELS_NUM_COMPONENTS);
+    if (!image_info->decoder_data.pdf_info.bitmap_ptr) {
+        free(rawBuffer);
+        image_info->decoder_data.pdf_info.fz_pixmap_ptr = NULL;
+        return ERROR;
+    }
     image_info->num_components = RGB_NUMBER_PIXELS_NUM_COMPONENTS;
 
     return OK;

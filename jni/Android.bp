@@ -81,7 +81,7 @@ cc_library_shared {
 }
 
 cc_test {
-    name: "libwfds_ipphelper_test",
+    name: "libwfds_test",
     gtest: true,
     cflags: [
         "-DINCLUDE_PDF=1",
@@ -94,11 +94,17 @@ cc_test {
     ],
     srcs: [
         "ipphelper/ipphelper_test.cpp",
-        // Compile the source file directly into the test to access all JNI symbols
+        // Compile source files directly into the test to access all JNI symbols
         "ipphelper/ipphelper.c",
         "ipphelper/ipp_print.c",
         "ipphelper/ippstatus_capabilities.c",
+
+        "plugins/wprint_mupdf_test.cpp",
+        "plugins/wprint_mupdf.c",
+        "plugins/wprint_image.c",
+        "plugins/wprint_image_platform.c",
     ],
+    header_libs: ["jni_headers"],
     local_include_dirs: [
         "include",
         "ipphelper",
